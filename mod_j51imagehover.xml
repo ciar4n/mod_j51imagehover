@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="2.5" client="site" method="upgrade">
+<extension type="module" version="3.6" client="site" method="upgrade">
 	<name>J51_ImageHover</name>
 	<author>Joomla51</author>
 	<creationDate>May 2016</creationDate>
