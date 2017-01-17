@@ -1,0 +1,392 @@
+// VARIABLES
+// -------------------------
+
+@black:                 #000;
+@grayDarker:            #101010;
+@grayDark:              #303030;
+@gray:                  #606060;
+@grayLight:             #909090;
+@grayLighter:           #e0e0e0;
+@grayLightest:          #f6f7f8;
+@white:                 #fff;
+
+@black:                 #000;
+@grayDarker:            #101010;
+@grayDark:              #303030;
+@gray:                  #606060;
+@grayLight:             #909090;
+@grayLighter:           #e0e0e0;
+@grayLightest:          #f6f7f8;
+@white:                 #fff;
+
+
+// Common
+// -------------------------
+@border-color: #e6e6e6;
+@blue:                  #3498db;
+@bluedark:              darken(@blue,15%);
+@bluedarker:            darken(@blue,20%);
+
+
+
+// Common
+// -------------------------
+@border-color: #e6e6e6;
+
+#status {display: none;}
+
+/* Alert Boxes */
+.alert {
+    margin-bottom: 0px; 
+    max-width:550px;
+    background-image:    -moz-linear-gradient(bottom, rgba(0,0,0,0.07) 0%, rgba(0,0,0,0.03) 100%); 
+    background-image:     -ms-linear-gradient(bottom, rgba(0,0,0,0.07) 0%, rgba(0,0,0,0.03) 100%); 
+    background-image:      -o-linear-gradient(bottom, rgba(0,0,0,0.07) 0%, rgba(0,0,0,0.03) 100%); 
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.07) 0%, rgba(0,0,0,0.03) 100%); 
+    background-image:         linear-gradient(bottom, rgba(0,0,0,0.07) 0%, rgba(0,0,0,0.03) 100%);
+}
+.alert-blue label {font-size: 14px;}
+.alert-blue {
+    color: #fff;
+    font-size: 14px;
+    clear: both;
+    line-height: 18px;
+    background-color: @blue; 
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 10px 15px;
+    text-shadow:1px 1px #066da1;
+    display: block;
+    position: relative;
+    width:100%; 
+}
+.alert-grey {
+    color: #555555;
+    font-size: 12px;
+    clear: both;
+    line-height: 18px;
+    background-color: #fefefe; 
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #d6d6d6;
+    margin: 0px;
+    padding: 5px 10px 2px;
+    text-shadow:1px 1px #fff;
+    display: block;
+    position: relative;  
+    min-width:200px;
+}
+.alert-warning {
+        color: #555;
+    font-size: 14px;
+    clear: both;
+    line-height: 18px;
+    background: url("../images/admin/notice.png") no-repeat scroll 5px center #eeeeee;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border:1px solid #d6d6d6;
+    padding: 12px 15px 12px 50px;
+    text-shadow:1px 1px #fff;
+    display: block;
+    position: relative;  
+    max-width:510px;
+}
+
+/* Color Picker */
+.moor-box, .moor-overlayBox, .moor-slider, .moor-chooseColor {
+    border: 1px solid #DDDDDD;
+}
+
+/* Template Info */
+.templateinfo img {
+    float:left;
+    padding:0 20px;
+}
+.templateinfo p {
+    padding:0 20px;
+    max-width:600px;
+    text-align:left;
+    font-weight:normal;
+}
+.templateinfo h4 {
+    padding:10px 20px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    font-size:22px;
+    color:#888888;
+    text-transform: uppercase;
+    background:#eeeeee;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+.form-horizontal .control-label {
+    min-width: 180px;
+    label {
+        margin-right: 10px;
+    }
+}
+
+/* Joomla 3.2 */
+.row-fluid .span6 {
+    margin-left: 0;
+    width: 100%;
+}
+#myTabTabs {
+    &.nav.nav-tabs {
+        background-color: #FFFFFF;
+        background-image:    -moz-linear-gradient(bottom, rgba(0,0,0,0.07) 0%, rgba(0,0,0,0.03) 100%); 
+        background-image:     -ms-linear-gradient(bottom, rgba(0,0,0,0.07) 0%, rgba(0,0,0,0.03) 100%); 
+        background-image:      -o-linear-gradient(bottom, rgba(0,0,0,0.07) 0%, rgba(0,0,0,0.03) 100%); 
+        background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.07) 0%, rgba(0,0,0,0.03) 100%); 
+        background-image:         linear-gradient(bottom, rgba(0,0,0,0.07) 0%, rgba(0,0,0,0.03) 100%); 
+        box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.5) inset;
+        border-radius: 8px 8px 0 0;
+        border:1px solid #DDDDDD;
+        border-top-color: #E4E4E4; 
+        padding: 8px;
+        margin-bottom: 0;
+    }
+    &.nav.nav-tabs > li {
+        > a {
+            position: relative;
+            background:#fafafa;
+            color: @bluedarker;
+            display:block;
+            font-size:12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none; 
+            margin: 3px;
+            z-index: 1; 
+            text-shadow: none;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            opacity: 1;
+            border: 1px solid rgba(0,0,0,0.1); 
+            border-radius:          6px; 
+            background-clip: padding-box; 
+            box-shadow:         inset 1px 1px 1px rgba(255,255,255,.5), 1px 1px 0px rgba(255,255,255,0.6);
+            background-image:         linear-gradient(bottom, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.02) 100%); 
+        }
+        a:hover {
+            background-color: #fff;
+        }
+        &.active a, a:focus {
+            background-color: #fff;
+            border: 1px solid @blue; 
+            -moz-box-shadow:    inset 0 0 5px fade(@blue, 10%);
+            -webkit-box-shadow: inset 0 0 5px fade(@blue, 10%);
+            box-shadow:         inset 0 0 5px fade(@blue, 10%);
+        }
+    }
+    &.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus, .nav-tabs > li > a:hover {
+        background: #ffffff;
+        color:#3aa6d5;
+        outline: none;
+        -moz-box-shadow: inset 0 0 4px rgba(0,0,0,.18), 1px 1px 1px rgba(255,255,255,.5);
+        -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.18), 1px 1px 1px rgba(255,255,255,.5);
+        box-shadow: inset 0 0 4px rgba(0,0,0,.18), 1px 1px 1px rgba(255,255,255,.5);
+        border: 1px solid rgba(0,0,0,.14); /* stroke */
+    }
+}
+&.tab-content {
+        background: none repeat scroll 0 0 #FAFAFA;
+        border-left: 1px solid #DDDDDD;
+        border-right: 1px solid #DDDDDD;
+        border-bottom: 1px solid #DDDDDD;
+        padding: 20px;
+        border-radius: 0px 0px 8px 8px;
+    }
+
+
+#system-message-container {
+    margin-bottom: 10px;
+}
+
+/* Opacity Slider */
+.opacityvalue {
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    height: 18px;
+    line-height: 18px;
+    min-width: 16px;
+    padding: 1px 5px;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+
+}
+input[type="range"] {
+    margin:0 5px;
+    padding:0;
+    width:150px;
+}
+
+
+#jform_params_social_custom_modal {
+    .btn-success , .btn-danger {
+        background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%); 
+        background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%); 
+        background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%); 
+        background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%); 
+        background-image: linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%); 
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+        text-shadow: 0 1px 2px rgba(0,0,0, 0.1);
+        border-width: 0px;
+        padding: 7px 14px 4px;
+        &:hover {
+            background-position: 0 0;
+        }
+    }
+    .btn-success {
+        background-color: #51A351;
+        &:hover {background-color: darken(#51A351, 10%);}
+    }
+    .btn-danger {
+        background-color: #BD362F;
+        &:hover {background-color: darken(#BD362F, 10%);}
+    }
+}
+#installer-install {
+    .moduleinfo {
+        padding: 20px;
+    }
+}
+
+/* Subforms */
+.subform-repeatable {
+    padding-right: 0;
+    border-top: 1px solid #eaeaea;
+    > .btn-toolbar {
+        display: none;
+    }
+    .subform-repeatable-group {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        border-top: 1px solid #ddd;
+        > .btn-toolbar {
+            position: absolute;
+            right:10px;
+            top:2px;
+            margin-top: 8px !important;
+        }
+        .control-group {
+            margin-bottom: 10px;
+        }
+    }
+    .btn-success, .btn-danger, .btn-primary {
+        position: static !important;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 13px;
+        line-height: 18px !important;
+        margin: 0 0 0 -1px !important;
+        padding: 4px 12px !important;
+        border-width: 1px !important;
+    }
+    .btn-success {
+        border-radius: 3px 0 0 3px !important;
+    }
+    .btn-danger {
+        border-radius: 0 !important;
+    }
+    .btn-primary {
+        border-radius: 0 3px 3px 0 !important;
+    }
+    fieldset {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #ddd;
+        border-left: 1px solid #dadada;
+        border-right: 1px solid #dadada;
+        background-color: #f3f3f3;
+        padding: 10px 20px 10px;
+    }
+    .btn-group {
+        border: 0;
+        background-color: transparent;
+    }
+    .slideshow-subform {
+        .control-group {
+            margin-bottom: 6px;
+            margin-top: 5px;
+            display: inline-block;
+        }
+        .control-label {
+            display: none !important;
+        }
+        .controls {
+            margin-left: 0px !important;
+            padding-bottom: 0 !important;
+        }
+    }
+}
+.form-horizontal .control-label {
+    padding-right: 0 !important;
+}
+.moduleoverrides-subform {
+    input ~ .control-group {
+        display: inline-block;
+        text-align: left;
+        vertical-align: top;
+        margin-top: 0 !important;
+        margin-bottom: 5px !important;
+        .control-label {
+            display: none;
+        }
+        .controls {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+        .input-prepend.input-append {
+            input {
+                max-width: 30px;
+            }
+        }
+    }
+    input + .control-group {
+        display: inline-block;
+        .control-label {
+            display: block;
+        }
+        label {
+        }
+    }
+}
+input[value="margin"] { 
+    + .control-group {
+        display: block;
+        height: 0;
+        width: 100%;
+        .control-label {
+            display: none;
+        }
+        + .control-group .control-label {
+            display: inline-block;
+            label {
+
+            }
+        }
+        ~ .control-group  {
+        }
+    }
+}
+
+#attrib-H3MODULEWIDTHS {
+    hr {
+        margin: 0 0 -10px;
+    }
+}
+
+/* Subform Lightbox Fix */
+#sbox-overlay {
+    position: fixed !important;
+}
