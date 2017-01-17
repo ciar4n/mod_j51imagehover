@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="2.5" client="site" method="upgrade">
+<extension type="module" version="3.6" client="site" method="upgrade">
 	<name>J51_ImageHover</name>
 	<author>Joomla51</author>
 	<creationDate>May 2016</creationDate>
-	<copyright>Copyright (C)2014 Joomla51</copyright>
+	<copyright>Copyright (C) 2017 Joomla51</copyright>
 	<license>GNU General Public License version 2 or later</license>
 	<authorEmail>info@joomla51.com</authorEmail>
 	<authorUrl>http://www.joomla51.com</authorUrl>
@@ -18,21 +18,28 @@
 
 	<files>
 		<filename module="mod_j51imagehover">mod_j51imagehover.php</filename>
-		<filename module="mod_j51imagehover">mod_j51imagehover.xml</filename>
-		<filename module="mod_j51imagehover">helper.php</filename>
-		<filename module="mod_j51imagehover">License.txt</filename>		
-		<filename module="mod_j51imagehover">index.html</filename>
-		<folder>css</folder>
+		<filename>mod_j51imagehover.xml</filename>
+		<filename>helper.php</filename>
+		<filename>License.txt</filename>		
+		<filename>index.html</filename>
 		<folder>tmpl</folder>
 		<folder>elements</folder>
 		<folder>language</folder>
 	</files>
+	
+	<media folder="media" destination="mod_j51imagehover">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>less</folder>
+	</media>
+
 	<languages>
 		<language tag="en-GB">language/en-GB/en-GB.mod_j51imagehover.ini</language>
 	</languages>
-	<config>	
+
+	<config>
 		<fields name="params" addfieldpath="/modules/mod_j51imagehover/elements">
-			
+
 			<fieldset name="MOD_J51_GENERALSETTINGS">
 				<field name="j51_image_width" type="list" default="4" label="MOD_J51_IMAGE_WIDTH" description="MOD_J51_IMAGE_WIDTH_DESC">
 					<option value="100%">1 Column</option>
@@ -112,18 +119,18 @@
 				<field name="j51_image_padding_x" type="textpx" default="20" label="MOD_J51_IMAGE_PADDINGH" description="MOD_J51_IMAGE_PADDINGH_DESC" />
 				<field name="j51_image_padding_y" type="textpx" default="20" label="MOD_J51_IMAGE_PADDINGV" description="MOD_J51_IMAGE_PADDINGV_DESC" />
 				<field name="j51_target_url" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
-				checked="checked" 
+				checked="checked"
 				class="btn-group">
 					<option value="_self">JNO</option>
 					<option value="_blank">JYES</option>
 				</field>
 			</fieldset>
-			
+
 			<fieldset name="IMAGES">
-			<field label="IMAGEHOVER_INFO" type="spacer" class="alert alert-grey"/>
+				<field label="IMAGEHOVER_INFO" type="spacer" class="alert alert-grey"/>
 				<field name="imagehover_images" type="subform" formsource="modules/mod_j51imagehover/elements/image.xml" class="advancedSelect" min="1" max="50" multiple="true" layout="joomla.form.field.subform.repeatable" groupByFieldset="true" label="Image(s)" description="Add image(s) to display in gallery" />
 			</fieldset>
-			
+
 			<fieldset name="advanced">
 				<field
 					name="layout"
@@ -163,6 +170,7 @@
 						value="static"></option>
 				</field>
 			</fieldset>
+
 		</fields>
 	</config>
 </extension>
