@@ -31,7 +31,7 @@
 		<language tag="en-GB">language/en-GB/en-GB.mod_j51imagehover.ini</language>
 	</languages>
 	<config>	
-		<fields name="params" addfieldpath="/modules/mod_j51imagehover/elements">
+		<fields name="params">
 			
 			<fieldset name="MOD_J51_GENERALSETTINGS">
 				<field name="j51_image_width" type="list" default="4" label="MOD_J51_IMAGE_WIDTH" description="MOD_J51_IMAGE_WIDTH_DESC">
