@@ -16,7 +16,6 @@ require_once dirname(__FILE__) . '/helper.php';
 $helper = new modJ51ImageHover();
 
 // Define variables
-$baseurl              = JUri::base();
 $imagehover_images    = $params->get('imagehover_images');
 $j51_imghvr           = $params->get('j51_imghvr');
 $j51_num_images       = $params->get('j51_num_images'); 
