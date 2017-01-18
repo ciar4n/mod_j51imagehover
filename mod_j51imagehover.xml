@@ -8,7 +8,7 @@
 	<authorEmail>info@joomla51.com</authorEmail>
 	<authorUrl>http://www.joomla51.com</authorUrl>
 	<version>1.0</version>
-	<description><![CDATA[<link href="../modules/mod_j51imagehover/css/admin.css" rel="stylesheet" type="text/css" media="all" /><div class="moduleinfo">
+	<description><![CDATA[<link href="../modules/mod_j51imagehover/media/css/admin.css" rel="stylesheet" type="text/css" media="all" /><div class="moduleinfo">
 <p>
 	Imagehover.css Module by Joomla51
 </p>
@@ -128,7 +128,7 @@
 
 			<fieldset name="IMAGES">
 				<field label="IMAGEHOVER_INFO" type="spacer" class="alert alert-grey"/>
-				<field name="imagehover_images" type="subform" formsource="modules/mod_j51imagehover/elements/image.xml" class="advancedSelect" min="1" max="50" multiple="true" layout="joomla.form.field.subform.repeatable" groupByFieldset="true" label="Image(s)" description="Add image(s) to display in gallery" />
+				<field name="imagehover_images" type="subform" formsource="modules/mod_j51imagehover/field/image.xml" class="advancedSelect" min="1" max="50" multiple="true" layout="joomla.form.field.subform.repeatable" groupByFieldset="true" label="Image(s)" description="Add image(s) to display in gallery" />
 			</fieldset>
 
 			<fieldset name="advanced">
