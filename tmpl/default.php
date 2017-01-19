@@ -88,8 +88,7 @@ $doc->addStyleDeclaration($j51_css);
 						</figcaption>
 					<?php endif; ?>
 				<?php endif; ?>
-
-				<?php if (!empty($item->image_url)) : ?>
+				<?php if (!empty($item->j51_target_url)) : ?>
 					<a href="<?php echo $item->j51_target_url; ?>" target="<?php echo $item->j51_target_url; ?>"></a>
 				<?php endif; ?>
 			</figure>
