@@ -11,8 +11,10 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
+$doc = JFactory::getDocument();
+
 // Load CSS/JS
-JHtml::_('stylesheet', 'mod_j51imagehover/imagehover.min.css', array(), true);
+$doc->addStyleSheet (JURI::base() . 'modules/mod_j51imagehover/media/css/imagehover.min.css' );
 
 // Styling from module parameters
 $j51_css = '
@@ -57,13 +59,11 @@ $j51_css = '
 }
 ';
 // Put styling in header
-$doc = JFactory::getDocument();
 $doc->addStyleDeclaration($j51_css);
 ?>
 
 <div class="j51imagehover j51imagehover<?php echo $j51_moduleid; ?>">
-	<?php foreach ($imagehover_images as $item) : ?>
-		<div class="j51imghvr-item">
+	<?php foreach ($imagehover_images as $item) : ?><div class="j51imghvr-item">
 			<figure class="<?php echo $item->j51_imghvr; ?>">
 				<img src="<?php echo $item->j51_image; ?>" alt="<?php echo $item->j51_title; ?>" 
 					<?php if (empty($item->j51_title) || empty($item->j51_text) || empty($item->image_url)) : ?>
@@ -76,7 +76,7 @@ $doc->addStyleDeclaration($j51_css);
 					>
 				<?php if (!empty($item->j51_title) || !empty($item->j51_text)) : ?>
 					<figcaption>
-						<h3 style="color:<?php echo $item->j51_title_color; ?>;"> <?php echo $item->j51_title; ?></h3>
+						<h3 style="color:<?php echo $j51_title_color; ?>;"> <?php echo $item->j51_title; ?></h3>
 						<?php if ($item->j51_text != '') : ?>
 							<p class="description" style="color:<?php echo $j51_text_color; ?>;"><?php echo $item->j51_text; ?></p>
 						<?php endif; ?>
@@ -90,9 +90,8 @@ $doc->addStyleDeclaration($j51_css);
 				<?php endif; ?>
 
 				<?php if (!empty($item->image_url)) : ?>
-					<a href="<?php echo $item->image_url; ?>" target="<?php echo $j51_target_url; ?>"></a>
+					<a href="<?php echo $item->j51_target_url; ?>" target="<?php echo $item->j51_target_url; ?>"></a>
 				<?php endif; ?>
 			</figure>
-		</div>
-	<?php endforeach; ?>
+		</div><?php endforeach; ?>
 </div>

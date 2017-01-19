@@ -35,7 +35,7 @@ $j51_text_vert_align  = $params->get('j51_text_vert_align', 'center');
 $j51_moduleid         = $module->id;
 $j51_title            = $params->get('j51_title');
 $j51_image            = $params->get('j51_image');
-$j51_image_alt         = $params->get('j51_image_alt')
+$j51_image_alt         = $params->get('j51_image_alt');
 $j51_target_url       = $params->get('j51_target_url');
 
 require(JModuleHelper::getLayoutPath('mod_j51imagehover'));
