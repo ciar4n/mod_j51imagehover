@@ -1,12 +1,9 @@
 <?php
 /**
-* J51_ImageHover
-* Version		: 1.0
-* Created by	: Joomla51
-* Email			: info@joomla51.com
-* URL			: www.joomla51.com
-* License GPLv2.0 - http://www.gnu.org/licenses/gpl-2.0.html
-*/
+ * @package    J51_ImageHover
+ * @copyright  Copyright (C) 2009 - 2017 Joomla51. All rights reserved.
+ * @license    GPL v3.0 or later http://www.gnu.org/licenses/gpl-3.0.html
+ */
 
 // no direct access
 defined('_JEXEC') or die('Restricted access');
@@ -64,33 +61,33 @@ $doc->addStyleDeclaration($j51_css);
 
 <div class="j51imagehover j51imagehover<?php echo $j51_moduleid; ?>">
 	<?php foreach ($imagehover_images as $item) : ?><div class="j51imghvr-item">
-			<figure class="<?php echo $item->j51_imghvr; ?>">
-				<img src="<?php echo $item->j51_image; ?>" alt="<?php echo $item->j51_title; ?>" 
-					<?php if (empty($item->j51_title) || empty($item->j51_text) || empty($item->image_url)) : ?>
-						style="
-							-webkit-transform: none;
-							-ms-transform: none;
-							transform: none;
-							"
+		<figure class="<?php echo $item->j51_imghvr; ?>">
+			<img src="<?php echo $item->j51_image; ?>" alt="<?php echo $item->j51_title; ?>" 
+				<?php if (empty($item->j51_title) || empty($item->j51_text) || empty($item->image_url)) : ?>
+					style="
+						-webkit-transform: none;
+						-ms-transform: none;
+						transform: none;
+						"
+				<?php endif; ?>
+				>
+			<?php if (!empty($item->j51_title) || !empty($item->j51_text)) : ?>
+				<figcaption>
+					<h3 style="color:<?php echo $j51_title_color; ?>;"> <?php echo $item->j51_title; ?></h3>
+					<?php if ($item->j51_text != '') : ?>
+						<p class="description" style="color:<?php echo $j51_text_color; ?>;"><?php echo $item->j51_text; ?></p>
 					<?php endif; ?>
-					>
-				<?php if (!empty($item->j51_title) || !empty($item->j51_text)) : ?>
+				</figcaption>
+			<?php else : ?>
+				<?php if (!empty($item->image_url)) : ?>
 					<figcaption>
-						<h3 style="color:<?php echo $j51_title_color; ?>;"> <?php echo $item->j51_title; ?></h3>
-						<?php if ($item->j51_text != '') : ?>
-							<p class="description" style="color:<?php echo $j51_text_color; ?>;"><?php echo $item->j51_text; ?></p>
-						<?php endif; ?>
+						<i class="icon-link" aria-hidden="true"></i>
 					</figcaption>
-				<?php else : ?>
-					<?php if (!empty($item->image_url)) : ?>
-						<figcaption>
-							<i class="icon-link" aria-hidden="true"></i>
-						</figcaption>
-					<?php endif; ?>
 				<?php endif; ?>
-				<?php if (!empty($item->j51_target_url)) : ?>
-					<a href="<?php echo $item->j51_target_url; ?>" target="<?php echo $item->j51_target_url; ?>"></a>
-				<?php endif; ?>
-			</figure>
-		</div><?php endforeach; ?>
+			<?php endif; ?>
+			<?php if (!empty($item->j51_target_url)) : ?>
+				<a href="<?php echo $item->j51_target_url; ?>" target="<?php echo $item->j51_target_url; ?>"></a>
+			<?php endif; ?>
+		</figure>
+	</div><?php endforeach; ?>
 </div>

@@ -1,12 +1,9 @@
 <?php
 /**
-* J51_ImageHover
-* Version		: 1.0
-* Created by	: Joomla51
-* Email			: info@joomla51.com
-* URL			: www.joomla51.com
-* License GPLv2.0 - http://www.gnu.org/licenses/gpl-2.0.html
-*/
+ * @package    J51_ImageHover
+ * @copyright  Copyright (C) 2009 - 2017 Joomla51. All rights reserved.
+ * @license    GPL v3.0 or later http://www.gnu.org/licenses/gpl-3.0.html
+ */
 
 defined('_JEXEC') or die('Restricted access');
 
