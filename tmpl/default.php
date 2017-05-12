@@ -14,7 +14,7 @@ defined('_JEXEC') or die('Restricted access');
 $doc = JFactory::getDocument();
 
 // Load CSS/JS
-$doc->addStyleSheet (JURI::base() . 'modules/mod_j51imagehover/media/css/imagehover.min.css' );
+JHtml::_('stylesheet', 'mod_j51imagehover/imagehover.min.css', array(), true);
 
 // Styling from module parameters
 $j51_css = '
