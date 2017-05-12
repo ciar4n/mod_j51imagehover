@@ -23,7 +23,7 @@
 		<filename>License.txt</filename>		
 		<filename>index.html</filename>
 		<folder>tmpl</folder>
-		<folder>elements</folder>
+		<folder>field</folder>
 		<folder>language</folder>
 	</files>
 	
