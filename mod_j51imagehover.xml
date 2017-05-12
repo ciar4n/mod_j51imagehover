@@ -37,6 +37,10 @@
 		<language tag="en-GB">language/en-GB/en-GB.mod_j51imagehover.ini</language>
 	</languages>
 
+	<updateservers>
+		<server type="extension" name="J51 - ImageHover" priority="1">https://joomla51.com/updates/imagehover_update.xml</server>
+	</updateservers>
+
 	<config>	
 		<fields name="params">
 
